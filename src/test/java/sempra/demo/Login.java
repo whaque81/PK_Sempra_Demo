@@ -85,7 +85,7 @@ public class Login {
 		  DesiredCapabilities dc = new DesiredCapabilities();
 		  dc.setCapability("os", "OS X");
 		  dc.setCapability("os_version", "Sierra");
-		  dc.setCapability("browser", "chrome");
+		  dc.setCapability("browser", "Safari");
 		  dc.setCapability("browserstack.debug", true);
 		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 		  driver = new RemoteWebDriver(new URL(URL), dc);

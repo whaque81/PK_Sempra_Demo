@@ -76,8 +76,8 @@ public class Guide {
   public void beforeClass() throws Exception{
 	  DesiredCapabilities dc = new DesiredCapabilities();
 	  dc.setCapability("os", "Windows");
-	  dc.setCapability("os_version", "10");
-	  dc.setCapability("browser", "IE");
+	  dc.setCapability("os_version", "7");
+	  dc.setCapability("browser", "chrome");
 	  dc.setCapability("browserstack.debug", true);
 	  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 	  driver = new RemoteWebDriver(new URL(URL), dc);
