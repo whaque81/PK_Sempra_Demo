@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27131" started-at="2017-08-02T04:52:20Z" finished-at="2017-08-02T04:52:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27131" started-at="2017-08-02T04:52:20Z" finished-at="2017-08-02T04:52:48Z">
+      <class name="sempra.demo.Store_Locator">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="beforeClass" is-config="true" duration-ms="6902" started-at="2017-08-01T22:52:20Z" finished-at="2017-08-01T22:52:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="i_am_on_www_spectrum_net_portal()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="i_am_on_www_spectrum_net_portal" duration-ms="8673" started-at="2017-08-01T22:52:27Z" finished-at="2017-08-01T22:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_am_on_www_spectrum_net_portal -->
+        <test-method status="PASS" signature="i_click_on_the_Locations_link()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="i_click_on_the_Locations_link" duration-ms="9102" started-at="2017-08-01T22:52:36Z" finished-at="2017-08-01T22:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_click_on_the_Locations_link -->
+        <test-method status="PASS" signature="i_enter_zip_code_and_distance_within()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="i_enter_zip_code_and_distance_within" duration-ms="832" started-at="2017-08-01T22:52:45Z" finished-at="2017-08-01T22:52:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_enter_zip_code_and_distance_within -->
+        <test-method status="PASS" signature="i_should_be_able_to_see_the_list_of_service_centers_near_me()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="i_should_be_able_to_see_the_list_of_service_centers_near_me" duration-ms="1008" started-at="2017-08-01T22:52:46Z" finished-at="2017-08-01T22:52:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_should_be_able_to_see_the_list_of_service_centers_near_me -->
+        <test-method status="PASS" signature="i_should_be_redirected_to_Spectrum_Service_page()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="i_should_be_redirected_to_Spectrum_Service_page" duration-ms="336" started-at="2017-08-01T22:52:47Z" finished-at="2017-08-01T22:52:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_should_be_redirected_to_Spectrum_Service_page -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:sempra.demo.Store_Locator@1a968a59]" name="afterClass" is-config="true" duration-ms="260" started-at="2017-08-01T22:52:47Z" finished-at="2017-08-01T22:52:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- sempra.demo.Store_Locator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

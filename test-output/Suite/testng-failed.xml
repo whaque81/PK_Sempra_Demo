@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="sempra.demo.Login">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes"/>
+        </methods>
+      </class> <!-- sempra.demo.Login -->
+      <class name="sempra.demo.Store_Locator">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- sempra.demo.Store_Locator -->
+      <class name="sempra.demo.Guide">
+        <methods>
+          <include name="afterClass"/>
+          <include name="i_click_on_the_Guide_link"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- sempra.demo.Guide -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

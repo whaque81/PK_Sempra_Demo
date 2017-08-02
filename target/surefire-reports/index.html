@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>TestNGSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Store_Locator" hash-for-method="i_am_on_www_spectrum_net_portal">i_am_on_www_spectrum_net_portal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Login" hash-for-method="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button">i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Guide" hash-for-method="i_am_on_www_spectrum_net_website">i_am_on_www_spectrum_net_website</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Guide" hash-for-method="i_click_on_the_Guide_link">i_click_on_the_Guide_link</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Store_Locator" hash-for-method="i_click_on_the_Locations_link">i_click_on_the_Locations_link</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Login" hash-for-method="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes">i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Store_Locator" hash-for-method="i_enter_zip_code_and_distance_within">i_enter_zip_code_and_distance_within</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Login" hash-for-method="i_should_be_able_to_login_into_Spectrum_portal">i_should_be_able_to_login_into_Spectrum_portal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Store_Locator" hash-for-method="i_should_be_able_to_see_the_list_of_service_centers_near_me">i_should_be_able_to_see_the_list_of_service_centers_near_me</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Store_Locator" hash-for-method="i_should_be_redirected_to_Spectrum_Service_page">i_should_be_redirected_to_Spectrum_Service_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="sempra.demo.Guide" hash-for-method="i_should_be_redirected_to_the_TV_Guide_page">i_should_be_redirected_to_the_TV_Guide_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sempra.demo.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button">
+                  </a> <!-- i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button -->
+                  <span class="method-name">i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes">
+                  </a> <!-- i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes -->
+                  <span class="method-name">i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_should_be_able_to_login_into_Spectrum_portal">
+                  </a> <!-- i_should_be_able_to_login_into_Spectrum_portal -->
+                  <span class="method-name">i_should_be_able_to_login_into_Spectrum_portal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sempra.demo.Guide</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_am_on_www_spectrum_net_website">
+                  </a> <!-- i_am_on_www_spectrum_net_website -->
+                  <span class="method-name">i_am_on_www_spectrum_net_website</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_click_on_the_Guide_link">
+                  </a> <!-- i_click_on_the_Guide_link -->
+                  <span class="method-name">i_click_on_the_Guide_link</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_should_be_redirected_to_the_TV_Guide_page">
+                  </a> <!-- i_should_be_redirected_to_the_TV_Guide_page -->
+                  <span class="method-name">i_should_be_redirected_to_the_TV_Guide_page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sempra.demo.Store_Locator</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_am_on_www_spectrum_net_portal">
+                  </a> <!-- i_am_on_www_spectrum_net_portal -->
+                  <span class="method-name">i_am_on_www_spectrum_net_portal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_click_on_the_Locations_link">
+                  </a> <!-- i_click_on_the_Locations_link -->
+                  <span class="method-name">i_click_on_the_Locations_link</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_enter_zip_code_and_distance_within">
+                  </a> <!-- i_enter_zip_code_and_distance_within -->
+                  <span class="method-name">i_enter_zip_code_and_distance_within</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_should_be_able_to_see_the_list_of_service_centers_near_me">
+                  </a> <!-- i_should_be_able_to_see_the_list_of_service_centers_near_me -->
+                  <span class="method-name">i_should_be_able_to_see_the_list_of_service_centers_near_me</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="i_should_be_redirected_to_Spectrum_Service_page">
+                  </a> <!-- i_should_be_redirected_to_Spectrum_Service_page -->
+                  <span class="method-name">i_should_be_redirected_to_Spectrum_Service_page</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/whaque/Documents/workspace/sempra.demo/TestNGSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;sempra.demo.Guide&quot;/&gt;
+      &lt;class name=&quot;sempra.demo.Login&quot;/&gt;
+      &lt;class name=&quot;sempra.demo.Store_Locator&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'i_click_on_the_Guide_link')
+data.setCell(0, 2, 'sempra.demo.Guide')
+data.setCell(0, 3, 248922);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button')
+data.setCell(1, 2, 'sempra.demo.Login')
+data.setCell(1, 3, 91148);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'i_am_on_www_spectrum_net_website')
+data.setCell(2, 2, 'sempra.demo.Guide')
+data.setCell(2, 3, 9586);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'i_click_on_the_Locations_link')
+data.setCell(3, 2, 'sempra.demo.Store_Locator')
+data.setCell(3, 3, 9381);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'i_am_on_www_spectrum_net_portal')
+data.setCell(4, 2, 'sempra.demo.Store_Locator')
+data.setCell(4, 3, 8690);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'i_should_be_able_to_login_into_Spectrum_portal')
+data.setCell(5, 2, 'sempra.demo.Login')
+data.setCell(5, 3, 6766);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'i_should_be_redirected_to_the_TV_Guide_page')
+data.setCell(6, 2, 'sempra.demo.Guide')
+data.setCell(6, 3, 2202);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'i_enter_zip_code_and_distance_within')
+data.setCell(7, 2, 'sempra.demo.Store_Locator')
+data.setCell(7, 3, 1218);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes')
+data.setCell(8, 2, 'sempra.demo.Login')
+data.setCell(8, 3, 793);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'i_should_be_able_to_see_the_list_of_service_centers_near_me')
+data.setCell(9, 2, 'sempra.demo.Store_Locator')
+data.setCell(9, 3, 698);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'i_should_be_redirected_to_Spectrum_Service_page')
+data.setCell(10, 2, 'sempra.demo.Store_Locator')
+data.setCell(10, 3, 325);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Store_Locator</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Guide</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Store_Locator</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_am_on_www_spectrum_net_portal</span>
+                <span class="method-start">7107 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Guide</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_am_on_www_spectrum_net_website</span>
+                <span class="method-start">11909 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Store_Locator</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_click_on_the_Locations_link</span>
+                <span class="method-start">15802 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button</span>
+                <span class="method-start">16925 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Guide</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_click_on_the_Guide_link</span>
+                <span class="method-start">21496 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Store_Locator</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_enter_zip_code_and_distance_within</span>
+                <span class="method-start">25183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">i_should_be_able_to_see_the_list_of_service_centers_near_me</span>
+                <span class="method-start">26402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">i_should_be_redirected_to_Spectrum_Service_page</span>
+                <span class="method-start">27101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">27426 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes</span>
+                <span class="method-start">108073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">i_should_be_able_to_login_into_Spectrum_portal</span>
+                <span class="method-start">108866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">115632 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sempra.demo.Guide</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">i_should_be_redirected_to_the_TV_Guide_page</span>
+                <span class="method-start">270418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">272620 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
