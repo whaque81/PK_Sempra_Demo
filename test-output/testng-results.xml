@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="113325" started-at="2017-08-02T20:29:12Z" finished-at="2017-08-02T20:31:05Z">
+  <suite name="Default suite" duration-ms="65458" started-at="2017-08-02T21:48:30Z" finished-at="2017-08-02T21:49:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="113325" started-at="2017-08-02T20:29:12Z" finished-at="2017-08-02T20:31:05Z">
-      <class name="sempra.demo.Login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="beforeClass" is-config="true" duration-ms="10071" started-at="2017-08-02T14:29:12Z" finished-at="2017-08-02T14:29:22Z">
+    <test name="Default test" duration-ms="65458" started-at="2017-08-02T21:48:30Z" finished-at="2017-08-02T21:49:35Z">
+      <class name="sempra.demo.Guide">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:sempra.demo.Guide@146ba0ac]" name="beforeClass" is-config="true" duration-ms="12511" started-at="2017-08-02T15:48:30Z" finished-at="2017-08-02T15:48:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button" duration-ms="10436" started-at="2017-08-02T14:29:22Z" finished-at="2017-08-02T14:29:33Z">
+        <test-method status="PASS" signature="i_am_on_www_spectrum_net_website()[pri:0, instance:sempra.demo.Guide@146ba0ac]" name="i_am_on_www_spectrum_net_website" duration-ms="16124" started-at="2017-08-02T15:48:42Z" finished-at="2017-08-02T15:48:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button -->
-        <test-method status="PASS" signature="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes" duration-ms="86717" started-at="2017-08-02T14:29:33Z" finished-at="2017-08-02T14:30:59Z">
+        </test-method> <!-- i_am_on_www_spectrum_net_website -->
+        <test-method status="PASS" signature="i_click_on_the_Guide_link()[pri:0, instance:sempra.demo.Guide@146ba0ac]" name="i_click_on_the_Guide_link" duration-ms="13555" started-at="2017-08-02T15:48:59Z" finished-at="2017-08-02T15:49:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes -->
-        <test-method status="PASS" signature="i_should_be_able_to_login_into_Spectrum_portal()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_should_be_able_to_login_into_Spectrum_portal" duration-ms="5806" started-at="2017-08-02T14:30:59Z" finished-at="2017-08-02T14:31:05Z">
+        </test-method> <!-- i_click_on_the_Guide_link -->
+        <test-method status="PASS" signature="i_should_be_redirected_to_the_TV_Guide_page()[pri:0, instance:sempra.demo.Guide@146ba0ac]" name="i_should_be_redirected_to_the_TV_Guide_page" duration-ms="22798" started-at="2017-08-02T15:49:12Z" finished-at="2017-08-02T15:49:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- i_should_be_able_to_login_into_Spectrum_portal -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="afterClass" is-config="true" duration-ms="278" started-at="2017-08-02T14:31:05Z" finished-at="2017-08-02T14:31:05Z">
+        </test-method> <!-- i_should_be_redirected_to_the_TV_Guide_page -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:sempra.demo.Guide@146ba0ac]" name="afterClass" is-config="true" duration-ms="454" started-at="2017-08-02T15:49:35Z" finished-at="2017-08-02T15:49:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- sempra.demo.Login -->
+      </class> <!-- sempra.demo.Guide -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

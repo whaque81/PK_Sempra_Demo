@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sempra.demo.Login">
+      <class name="sempra.demo.Guide">
         <methods>
-          <include name="afterClass"/>
+          <include name="i_should_be_redirected_to_the_TV_Guide_page"/>
+          <include name="i_click_on_the_Guide_link"/>
+          <include name="i_am_on_www_spectrum_net_website"/>
           <include name="beforeClass"/>
-          <include name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes"/>
         </methods>
-      </class> <!-- sempra.demo.Login -->
+      </class> <!-- sempra.demo.Guide -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

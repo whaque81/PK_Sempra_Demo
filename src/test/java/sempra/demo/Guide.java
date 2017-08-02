@@ -80,7 +80,7 @@ public class Guide {
 	  dc.setCapability("browser", "IE");
 	  dc.setCapability("browserstack.debug", true);
 	  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
-	  driver = new RemoteWebDriver(new URL("URL"), dc);
+	  driver = new RemoteWebDriver(new URL(URL), dc);
 	  reports = new ExtentReports("Guide.html",false,DisplayOrder.NEWEST_FIRST);
 	  wait = new WebDriverWait(driver,30);
   }
