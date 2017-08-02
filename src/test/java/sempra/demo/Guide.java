@@ -53,14 +53,14 @@ public class Guide {
 	public void i_click_on_the_Guide_link() throws Exception {
   		driver.findElement(By.xpath("//*[@id='page-footer']/div[2]/div/div[2]/div/div[2]/ul/li[2]/a")).click();
 	    logger.log(LogStatus.PASS, "Click on Guide link at the bottom of the home page", "Expected: Spectrum.net TV Guide page should open in the browser | Actual: Spectrum.net TV Guide page opened without any issues");
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='content']/div/div[1]/div/div/div[1]/h1")));
+	    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='content']/div/div[1]/div/div/div[1]/h1")));
 	}
   	@Test
 	@Then("^I should be redirected to the TV Guide page$")
 	public void i_should_be_redirected_to_the_TV_Guide_page() throws Exception {
 		String guide = logger.addScreenCapture(getscreenshot());
 		logger.log(LogStatus.INFO, "", "Spectrum.net TV Guide page " + guide);
-		Thread.sleep(7000);
+		Thread.sleep(4000);
 	    
 	}
 	
