@@ -35,6 +35,9 @@ public class Store_Locator {
 	private ExtentReports reports;
 	private ExtentTest logger;
 	private WebDriverWait wait;
+	public static final String USERNAME = "wasimhaque1";
+	public static final String AUTOMATE_KEY = "htV8xATeN8NrLo5rV7EV";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	@Test
 	@Given("^I am on www\\.spectrum\\.net portal$")
@@ -53,8 +56,10 @@ public class Store_Locator {
 	public void i_click_on_the_Locations_link() throws Exception {
 		driver.findElement(By.linkText("Locations")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id='ng-app']")).sendKeys(Keys.ESCAPE);
-		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("input[id='zipcode']")).clear();
+		driver.findElement(By.cssSelector("input[id='zipcode']")).sendKeys("31901");
+	    driver.findElement(By.xpath("//button[text()='Continue']")).click();
+		Thread.sleep(2000);
 	}
 
 	@Test
@@ -97,6 +102,7 @@ public class Store_Locator {
 		  DesiredCapabilities dc = new DesiredCapabilities();
 		  dc.setBrowserName("chrome");
 		  driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
+		  //driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
 		  reports = new ExtentReports("Store_Locator.html",false,DisplayOrder.NEWEST_FIRST);
 		  wait = new WebDriverWait(driver,60);

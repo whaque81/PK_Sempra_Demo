@@ -7,6 +7,7 @@ import java.util.UUID;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -32,6 +33,9 @@ public class Login {
 	private ExtentReports reports;
 	private ExtentTest logger;
 	private WebDriverWait wait;
+	public static final String USERNAME = "wasimhaque1";
+	public static final String AUTOMATE_KEY = "htV8xATeN8NrLo5rV7EV";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	@Test
 	@Given("^I am on www\\.spectrum\\.net portal and I click on Sign In button$")
@@ -44,14 +48,14 @@ public class Login {
 	    logger.log(LogStatus.INFO, "", "Spectrum.net home page " + homepage);
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Sign In")));
 	    driver.findElement(By.partialLinkText("Sign In")).click();
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login-form-button")));
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[text()='Sign In']")));
 	}
 	@Test
 	@When("^I enter valid credentials and click on the Sign In button$")
 	public void i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes() throws Exception {
-		driver.findElement(By.id("cc-username")).sendKeys("autoqa003_hoh@charter.net");
-	    driver.findElement(By.id("cc-user-password")).sendKeys("Testing01");
-	    driver.findElement(By.id("login-form-button")).click(); 
+		driver.findElement(By.cssSelector("input[@name='username']")).sendKeys("autoqa003_hoh@charter.net");
+	    driver.findElement(By.cssSelector("input[@name='password']")).sendKeys("Testing01");
+	    driver.findElement(By.xpath("//input[text()='Sign In']")).click(); 
 	    logger.log(LogStatus.PASS, "Click on Sign In link at the top of the home page", "Expected: Spectrum.net login page should open in the browser | Actual: Spectrum.net login page opened without any issues");	  
 	    String login = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net login page " + login);
@@ -60,7 +64,7 @@ public class Login {
 	@Test
 	@Then("^I should be able to login into Spectrum portal$")
 	public void i_should_be_able_to_login_into_Spectrum_portal() throws Exception {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		String loggedin = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net landing page " + loggedin);
 	}
@@ -78,8 +82,10 @@ public class Login {
 	@BeforeClass
 	  public void beforeClass() throws Exception{
 		  DesiredCapabilities dc = new DesiredCapabilities();
+		  dc.setPlatform(Platform.WIN10);
 		  dc.setBrowserName("chrome");
-		  driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
+		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
+		  driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
 		  reports = new ExtentReports("Login.html",false,DisplayOrder.NEWEST_FIRST);
 		  wait = new WebDriverWait(driver,60);

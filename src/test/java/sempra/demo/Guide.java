@@ -32,6 +32,9 @@ public class Guide {
 	private ExtentReports reports;
 	private ExtentTest logger;
 	private WebDriverWait wait;
+	public static final String USERNAME = "wasimhaque1";
+	public static final String AUTOMATE_KEY = "htV8xATeN8NrLo5rV7EV";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
   
   @Test
@@ -57,7 +60,7 @@ public class Guide {
 	public void i_should_be_redirected_to_the_TV_Guide_page() throws Exception {
 		String guide = logger.addScreenCapture(getscreenshot());
 		logger.log(LogStatus.INFO, "", "Spectrum.net TV Guide page " + guide);
-		Thread.sleep(2000);
+		Thread.sleep(7000);
 	    
 	}
 	
@@ -74,6 +77,7 @@ public class Guide {
 	  DesiredCapabilities dc = new DesiredCapabilities();
 	  dc.setBrowserName("firefox");
 	  driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
+	  //driver = new RemoteWebDriver(new URL(URL), dc);
 	  reports = new ExtentReports("Guide.html",false,DisplayOrder.NEWEST_FIRST);
 	  wait = new WebDriverWait(driver,60);
   }

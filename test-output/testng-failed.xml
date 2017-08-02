@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sempra.demo.Store_Locator">
+      <class name="sempra.demo.Login">
         <methods>
-          <include name="beforeClass"/>
-          <include name="i_enter_zip_code_and_distance_within"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button"/>
+          <include name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes"/>
         </methods>
-      </class> <!-- sempra.demo.Store_Locator -->
+      </class> <!-- sempra.demo.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
