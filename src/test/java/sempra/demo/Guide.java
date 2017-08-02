@@ -75,11 +75,14 @@ public class Guide {
   @BeforeClass
   public void beforeClass() throws Exception{
 	  DesiredCapabilities dc = new DesiredCapabilities();
-	  dc.setBrowserName("firefox");
+	  dc.setCapability("os", "Windows");
+	  dc.setCapability("os_version", "10");
+	  dc.setCapability("browser", "IE");
+	  dc.setCapability("browserstack.debug", true);
 	  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 	  driver = new RemoteWebDriver(new URL(URL), dc);
 	  reports = new ExtentReports("Guide.html",false,DisplayOrder.NEWEST_FIRST);
-	  wait = new WebDriverWait(driver,60);
+	  wait = new WebDriverWait(driver,30);
   }
 
   @AfterClass

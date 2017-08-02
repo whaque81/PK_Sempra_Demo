@@ -47,13 +47,13 @@ public class Store_Locator {
 	    logger.log(LogStatus.PASS, "Navigate to Spectrum.net portal", "Expected: Spectrum.net home page should open in the browser | Actual: Spectrum.net home page opened without any issues");	  
 	    String homepage = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net home page " + homepage);
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Locations")));
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='page-footer']/div[2]/div/div[2]/div/div[3]/ul/li[6]/a")));
 	}
 	
 	@Test
 	@When("^I click on the Locations link$")
 	public void i_click_on_the_Locations_link() throws Exception {
-		driver.findElement(By.linkText("Locations")).click();
+		driver.findElement(By.xpath("//*[@id='page-footer']/div[2]/div/div[2]/div/div[3]/ul/li[6]/a")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("input[id='zipcode']")).clear();
 		driver.findElement(By.cssSelector("input[id='zipcode']")).sendKeys("31901");
@@ -75,7 +75,8 @@ public class Store_Locator {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src='https://www.spectrum.com/browse/content/store-locations-partner']")));
 		driver.findElement(By.xpath("//*[@id='store-locator-form']/input[1]")).sendKeys("80237"); 
 		driver.findElement(By.xpath("//*[@id='store-locator-form']/input[2]")).sendKeys("100");
-		driver.findElement(By.xpath("//*[@id='store-locator-form']/div[1]/button")).click();
+		//driver.findElement(By.xpath("//*[@id='store-locator-form']/div[1]/button")).click();
+		driver.findElement(By.xpath("//span[text()='SUBMIT']")).click();
 	}
 
 	
@@ -99,12 +100,15 @@ public class Store_Locator {
 	@BeforeClass
 	  public void beforeClass() throws Exception{
 		  DesiredCapabilities dc = new DesiredCapabilities();
-		  dc.setBrowserName("chrome");
+		  dc.setCapability("os", "OS X");
+		  dc.setCapability("os_version", "Sierra");
+		  dc.setCapability("browser", "firefox");
+		  dc.setCapability("browserstack.debug", true);
 		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 		  driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
 		  reports = new ExtentReports("Store_Locator.html",false,DisplayOrder.NEWEST_FIRST);
-		  wait = new WebDriverWait(driver,60);
+		  wait = new WebDriverWait(driver,30);
 	  }
 
 	  @AfterClass

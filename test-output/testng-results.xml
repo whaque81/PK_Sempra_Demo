@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="115298" started-at="2017-08-02T07:38:13Z" finished-at="2017-08-02T07:40:09Z">
+  <suite name="Default suite" duration-ms="113325" started-at="2017-08-02T20:29:12Z" finished-at="2017-08-02T20:31:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="115298" started-at="2017-08-02T07:38:13Z" finished-at="2017-08-02T07:40:09Z">
+    <test name="Default test" duration-ms="113325" started-at="2017-08-02T20:29:12Z" finished-at="2017-08-02T20:31:05Z">
       <class name="sempra.demo.Login">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="beforeClass" is-config="true" duration-ms="10394" started-at="2017-08-02T01:38:13Z" finished-at="2017-08-02T01:38:24Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="beforeClass" is-config="true" duration-ms="10071" started-at="2017-08-02T14:29:12Z" finished-at="2017-08-02T14:29:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button" duration-ms="11731" started-at="2017-08-02T01:38:24Z" finished-at="2017-08-02T01:38:36Z">
+        <test-method status="PASS" signature="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button" duration-ms="10436" started-at="2017-08-02T14:29:22Z" finished-at="2017-08-02T14:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_am_on_www_spectrum_net_portal_and_I_click_on_Sign_In_button -->
-        <test-method status="PASS" signature="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes" duration-ms="86745" started-at="2017-08-02T01:38:36Z" finished-at="2017-08-02T01:40:02Z">
+        <test-method status="PASS" signature="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes" duration-ms="86717" started-at="2017-08-02T14:29:33Z" finished-at="2017-08-02T14:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes -->
-        <test-method status="PASS" signature="i_should_be_able_to_login_into_Spectrum_portal()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_should_be_able_to_login_into_Spectrum_portal" duration-ms="6030" started-at="2017-08-02T01:40:02Z" finished-at="2017-08-02T01:40:08Z">
+        <test-method status="PASS" signature="i_should_be_able_to_login_into_Spectrum_portal()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="i_should_be_able_to_login_into_Spectrum_portal" duration-ms="5806" started-at="2017-08-02T14:30:59Z" finished-at="2017-08-02T14:31:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- i_should_be_able_to_login_into_Spectrum_portal -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="afterClass" is-config="true" duration-ms="384" started-at="2017-08-02T01:40:08Z" finished-at="2017-08-02T01:40:09Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:sempra.demo.Login@146ba0ac]" name="afterClass" is-config="true" duration-ms="278" started-at="2017-08-02T14:31:05Z" finished-at="2017-08-02T14:31:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

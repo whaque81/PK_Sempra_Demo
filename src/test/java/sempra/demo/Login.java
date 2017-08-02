@@ -54,12 +54,12 @@ public class Login {
 		logger.log(LogStatus.PASS, "Click on Sign In link at the top of the page", "Expected: Spectrum.net login page should open in the browser | Actual: Spectrum.net login page opened without any issues");	  
 	    String login = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net login page " + login);
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("autoqa003_hoh@charter.net");
-	    driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Testing01");
+		driver.findElement(By.cssSelector("input[name='username']")).sendKeys("autoqa003_hoh@charter.net");
+	    driver.findElement(By.cssSelector("input[name='password']")).sendKeys("Testing01");
 	    logger.log(LogStatus.PASS, "Clicked on Sign In button", "Expected: Spectrum.net landing should open in the browser | Actual: Spectrum.net landing page opened without any issues");	  
 	    String signin = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net login page " + signin);
-	    driver.findElement(By.xpath("//*[@id='login-form-button']")).click(); 
+	    driver.findElement(By.cssSelector("input[id='login-form-button']")).click(); 
 	}
 
 	@Test
@@ -83,15 +83,15 @@ public class Login {
 	@BeforeClass
 	  public void beforeClass() throws Exception{
 		  DesiredCapabilities dc = new DesiredCapabilities();
-		  dc.setCapability("os", "Windows");
-		  dc.setCapability("os_version", "10");
-		  dc.setBrowserName("chrome");
+		  dc.setCapability("os", "OS X");
+		  dc.setCapability("os_version", "Sierra");
+		  dc.setCapability("browser", "chrome");
 		  dc.setCapability("browserstack.debug", true);
 		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 		  driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
 		  reports = new ExtentReports("Login.html",false,DisplayOrder.NEWEST_FIRST);
-		  wait = new WebDriverWait(driver,60);
+		  wait = new WebDriverWait(driver,30);
 	  }
 
 	  @AfterClass
