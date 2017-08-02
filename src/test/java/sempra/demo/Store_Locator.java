@@ -6,7 +6,6 @@ import java.util.UUID;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -101,8 +100,8 @@ public class Store_Locator {
 	  public void beforeClass() throws Exception{
 		  DesiredCapabilities dc = new DesiredCapabilities();
 		  dc.setBrowserName("chrome");
-		  driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
-		  //driver = new RemoteWebDriver(new URL(URL), dc);
+		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
+		  driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
 		  reports = new ExtentReports("Store_Locator.html",false,DisplayOrder.NEWEST_FIRST);
 		  wait = new WebDriverWait(driver,60);

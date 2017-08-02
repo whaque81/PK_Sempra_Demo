@@ -7,7 +7,6 @@ import java.util.UUID;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -48,17 +47,19 @@ public class Login {
 	    logger.log(LogStatus.INFO, "", "Spectrum.net home page " + homepage);
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Sign In")));
 	    driver.findElement(By.partialLinkText("Sign In")).click();
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[text()='Sign In']")));
 	}
 	@Test
 	@When("^I enter valid credentials and click on the Sign In button$")
 	public void i_enter_valid_autoqa__hoh_charter_net_and_Testing_in_the_textboxes() throws Exception {
-		driver.findElement(By.cssSelector("input[@name='username']")).sendKeys("autoqa003_hoh@charter.net");
-	    driver.findElement(By.cssSelector("input[@name='password']")).sendKeys("Testing01");
-	    driver.findElement(By.xpath("//input[text()='Sign In']")).click(); 
-	    logger.log(LogStatus.PASS, "Click on Sign In link at the top of the home page", "Expected: Spectrum.net login page should open in the browser | Actual: Spectrum.net login page opened without any issues");	  
+		logger.log(LogStatus.PASS, "Click on Sign In link at the top of the page", "Expected: Spectrum.net login page should open in the browser | Actual: Spectrum.net login page opened without any issues");	  
 	    String login = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net login page " + login);
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("autoqa003_hoh@charter.net");
+	    driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Testing01");
+	    logger.log(LogStatus.PASS, "Clicked on Sign In button", "Expected: Spectrum.net landing should open in the browser | Actual: Spectrum.net landing page opened without any issues");	  
+	    String signin = logger.addScreenCapture(getscreenshot());
+	    logger.log(LogStatus.INFO, "", "Spectrum.net login page " + signin);
+	    driver.findElement(By.xpath("//*[@id='login-form-button']")).click(); 
 	}
 
 	@Test
@@ -82,8 +83,10 @@ public class Login {
 	@BeforeClass
 	  public void beforeClass() throws Exception{
 		  DesiredCapabilities dc = new DesiredCapabilities();
-		  dc.setPlatform(Platform.WIN10);
+		  dc.setCapability("os", "Windows");
+		  dc.setCapability("os_version", "10");
 		  dc.setBrowserName("chrome");
+		  dc.setCapability("browserstack.debug", true);
 		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 		  driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
