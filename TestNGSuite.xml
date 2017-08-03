@@ -4,7 +4,7 @@
     <classes>
       <class name="sempra.demo.Login"/>
       <class name="sempra.demo.Store_Locator"/>
-      
+      <class name="sempra.demo.Guide"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
