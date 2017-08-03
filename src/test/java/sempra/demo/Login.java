@@ -47,6 +47,7 @@ public class Login {
 	    logger.log(LogStatus.INFO, "", "Spectrum.net home page " + homepage);
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Sign In")));
 	    driver.findElement(By.partialLinkText("Sign In")).click();
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[name='username']")));
 	}
 	@Test
 	@When("^I enter valid credentials and click on the Sign In button$")
