@@ -91,7 +91,7 @@ public class Login {
 		  //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc);
 		  driver = new RemoteWebDriver(new URL(URL), dc);
 		  driver.manage().window().maximize();
-		  reports = new ExtentReports("TestResults.html",false,DisplayOrder.NEWEST_FIRST);
+		  reports = new ExtentReports("Login.html",false,DisplayOrder.NEWEST_FIRST);
 		  wait = new WebDriverWait(driver,30);
 	  }
 
