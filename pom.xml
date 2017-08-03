@@ -4,20 +4,6 @@
   <artifactId>sempra.demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <repositories>
-	  <repository>
-	    <id>sonatype-nexus-snapshots</id>
-	    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-	  </repository>
-  </repositories>
-  
-  <pluginRepositories>
-	  <pluginRepository>
-	   <id>sonatype-nexus-snapshots</id>
-	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-	  </pluginRepository>
-  </pluginRepositories>
-  
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
@@ -62,12 +48,6 @@
 	    <version>2.41.2</version>
 	</dependency>
 	
-	<dependency>
-	    <groupId>com.browserstack</groupId>
-	    <artifactId>automate-testassist</artifactId>
-	    <version>0.7.2-SNAPSHOT</version>
-	</dependency>
-
  </dependencies>
 	<build>
     <plugins>
@@ -80,23 +60,6 @@
             <suiteXmlFile>TestNGSuite.xml</suiteXmlFile>      
           </suiteXmlFiles>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.browserstack</groupId>
-        <artifactId>automate-maven-plugin</artifactId>
-        <version>0.7.2-SNAPSHOT</version>
-        <configuration>
-            <source>${jdk.source.version}</source>
-            <target>${jdk.target.version}</target>
-            <complianceLevel>${jdk.source.version}</complianceLevel>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>test-compile</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
