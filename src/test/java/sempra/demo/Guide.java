@@ -60,7 +60,7 @@ public class Guide {
 	public void i_should_be_redirected_to_the_TV_Guide_page() throws Exception {
 		String guide = logger.addScreenCapture(getscreenshot());
 		logger.log(LogStatus.INFO, "", "Spectrum.net TV Guide page " + guide);
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 	    
 	}
 	

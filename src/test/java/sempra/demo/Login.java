@@ -66,7 +66,7 @@ public class Login {
 	@Test
 	@Then("^I should be able to login into Spectrum portal$")
 	public void i_should_be_able_to_login_into_Spectrum_portal() throws Exception {
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		String loggedin = logger.addScreenCapture(getscreenshot());
 	    logger.log(LogStatus.INFO, "", "Spectrum.net landing page " + loggedin);
 	}
