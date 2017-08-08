@@ -32,8 +32,8 @@ public class Login {
 	private ExtentReports reports;
 	private ExtentTest logger;
 	private WebDriverWait wait;
-	public static final String USERNAME = "wasimhaque1";
-	public static final String AUTOMATE_KEY = "htV8xATeN8NrLo5rV7EV";
+	public static final String USERNAME = "wasimhaque2";
+	public static final String AUTOMATE_KEY = "31sgzMQsi6rptoY3AZd1";
 	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	@Test
